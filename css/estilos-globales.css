@@ -46,7 +46,9 @@ h1{
   border-color: #D8D8D8;
   border-radius: 0;
 }
-
+.text-style-responsive{
+  color: white;
+}
 .box-form .col{
   margin: auto;
 }
@@ -276,9 +278,6 @@ h3{
   box-shadow: 0px 32px 84px rgba(0, 0, 0, 0.21725);
 }
 
-.subtitle-form-2{
-
-}
 
 .subtitle-form-2 span:first-child, .subtitle-form-2 span:nth-child(2){
   width: 100%;
@@ -336,6 +335,7 @@ footer::before{
   .banner-form{
     height: 370px;
     width: 90%;
+    background-position: center;
   }
   h1{
     font-size: 21px;
@@ -348,7 +348,7 @@ footer::before{
     width: 100%;
   }
   .section-cards{
-    margin-top: 18.2rem;
+    margin-top: 17.2rem;
   }
   h2{
     font-size:21px;
