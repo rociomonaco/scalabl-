@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilos-globales.css">
+        <link rel="icon" href="img/icon.ico">
+        <meta property="og:title" content="Comienza el cambio" />
+        <meta property="og:description" content="¿Quieres vivir de lo que te gusta? Entonces, ¡esta prueba gratuita de nuestro Curso Online de Emprendimientos e Innovación es para ti! Aprenderás a diseñar tu futuro laboral de la forma que desees, sin partir de una idea y sin necesidad de dinero." />
+        <meta name="description" content="¿Quieres vivir de lo que te gusta? Entonces, ¡esta prueba gratuita de nuestro Curso Online de Emprendimientos e Innovación es para ti! Aprenderás a diseñar tu futuro laboral de la forma que desees, sin partir de una idea y sin necesidad de dinero." />
+        <title>Comienza el cambio</title>
+    </head>
+    <body>
+        <header class="container-fluid p-0">
+            <nav class="navbar nav-border navbar-expand-lg">
+                <div class="container d-lg-flex">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" alt="Logo Cursos Scalabl">
+                    </a>
+            </nav>
+            <div class="container banner-form d-flex flex-column justify-content-lg-between">
+                <div>
+                    <h1 class="text-center mx-auto">¿Estás buscando un cambio?</h1>
+                    <h2 class="text-center mx-auto subtitle-header-color-shadow">¿Quieres vivir de lo que te gusta? <span>¡Aprende a hacerlo!</span></h2>
+                </div>
+
+                <form onsubmit="javascript: return validar_politicas();" method="post" action="funciones.php" class="d-flex flex-column align-items-center justify-content-sm-center align-items-center position-sm-absolute container mt-5" id="form1">
+                    <p class="text-center subtitle-header-color-shadow subtitle-form">
+                        Obtendrás de inmediato tu clase gratis al completar tus datos
+                    </p>
+                    <div class="box-form flex-xl-row flex-lg-row d-sm-flex flex-sm-column flex-md-column">
+                        <div class="col">
+                            <input type="text" name="nombre" required class="form-control m-xl-2 m-lg-2" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                            <input type="email" name="mail" required class="form-control form-control-border m-xl-2 m-lg-2" placeholder="Email">
+                        </div>
+                        <div class="col">
+                            <input type="number" name="tel" required class="form-control form-control-border m-xl-2 m-lg-2" placeholder="Teléfono">
+                        </div>
+                        <input type="submit" class="btn btn-form" name="btn_enviar_form_mkt" value="Ir a la prueba gratis ahora" />
+                    </div>
+                    <div class="d-flex flex-row  align-items-center justify-content-between">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input m-1" id="cb_politicas" value="">
+                        </div>
+                        <p class="text-center mt-3 text-style-responsive">Al completar tus datos aceptas nuestras <a href="#modalTerminosCondiciones"data-bs-toggle="modal" data-bs-target="#modalTerminosCondiciones">políticas de privacidad</a>.</p>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <!-- SECCION CARDS -->
+        <section class="section-cards container my-lg-5 my-xl-5">
+            <h2 class="text-center mt-md-2 my-5 m-auto">¿Te ha pasado de postergar lo <span>que más te apasiona por causa de tu trabajo?</span> ¿Te imaginas combinando ambas cosas?</h2>
+            
+            <h2 class="text-center  my-5 m-auto">Con nuestro Curso de Emprendimiento e Innovación <span>aprenderás a diseñar tu futuro laboral de la forma que desees,</span> sin partir de una idea y sin necesidad de dinero.</h2>
+            
+            <div class="card-group">
+                <div class="card me-xl-3 me-lg-3">
+                    <img src="img/group-card-1.png" class="" alt="Icono Card 1">
+                    <div class="card-body">
+                        <p class="card-text">Aprenderás una metodología de 5 pasos simples y accionables, que comprende desde la generación del negocio hasta las ventas.</p>
+                    </div>
+                </div>
+                <div class="card me-xl-3 me-lg-3">
+                    <img src="img/group-card-2.png" class="" alt="Icono Card 2">
+                    <div class="card-body">
+                        <p class="card-text">Adquirirás nuevas formas de pensar y de hacer tu trabajo y podrás compartir todo lo aprendido con personas de todo el mundo.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/group-card-3.png" class="card-img-top" alt="Icono Card 3">
+                    <div class="card-body">
+                        <p class="card-text">Te sentirás con más seguridad para afrontar nuevos desafíos y pasar al siguiente nivel en tu desarrollo profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / SECCION CARDS -->
+
+        <!-- SECCION CONOCE AL PROFESOR -->
+        <section class="section-francisco-santolo container p-5">
+            <div class="css-grid container"> 
+                <div class="grid-box-1">
+                    <h3 class="position-relative d-none d-sm-none d-lg-block d-xl-block">Conoce al profesor</h3>
+                    <h3 class="d-block d-lg-none d-md-block title-grid-mobile">Sobre el profesor</h3>
+                </div>
+                <div class="grid-box-2">
+                    <p class="text-justify m-lg-auto">
+                        Francisco Santolo, CEO de Scalabl, es economista y graduado de MBA. Estudió en prestigiosas universidades como Harvard, Stanford, Kellogg, Chicago Booth, MIT y Singularity. En 2017 la revista Forbes lo destacó como “el Hacker de las Startups”.
+                    </p>
+                </div>
+                <div class="grid-box-3">
+                    <img src="img/ceo-scalabl-francisco-santolo.png" alt="Francisco Santolo CEO de Scalabl.">
+                </div>
+                <div class="grid-box-4 m-auto mt-sm-4">
+                    <img src="img/universidades.png" alt="Universidades en dónde estudió Francisco Santolo.">
+                </div>
+            </div>
+        </section>
+        <!-- / SECCION CONOCE AL PROFESOR -->
+
+        <!-- SECCION TESTIMONIOS -->
+        <section class="container">
+
+            <!-- CARROUSEL -->
+
+        </section>
+        <!-- / SECCION TESTIMONIOS -->
+
+        <!-- SECCION PRUEBA GRATUITA -->
+        <section class="container my-5">
+            <h2 class="text-center mb-5 m-auto subtitle-form-2">El cambio que deseas <span>comienza dando un primer paso,</span> <span>¡haz la prueba gratuita de nuestro curso!</span></h2>
+            <form method="post" action="funciones.php" class="d-flex flex-column align-items-center container" id="form2">
+                <div class="box-form flex-xl-row flex-lg-row d-sm-flex flex-sm-column flex-md-column container-sm-fluid">
+                    <div class="col">
+                        <input type="text" name="nombre" required class="form-control m-xl-2 m-lg-2" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="email" name="mail" required class="form-control form-control-border m-xl-2 m-lg-2" placeholder="Email">
+                    </div>
+                    <div class="col">
+                        <input type="number" name="tel" required class="form-control form-control-border m-xl-2 m-lg-2" placeholder="Teléfono">
+                    </div>
+                    
+                    <input type="submit" class="btn btn-form" name="btn_enviar_form_mkt" value="Ir a la prueba gratis ahora" />
+                </div>
+            </form>
+        </section>
+          <!-- / SECCION PRUEBA GRATUITA -->
+
+        <footer class="container-lg container-md container-sm-fluid">
+        </footer>
+
+        <!-- MODAL TERMINOS Y CONDICIONES -->
+        <div class="modal fade" id="modalTerminosCondiciones" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="staticBackdropLabel1">Política de Privacidad Scalabl Global Limited</h2>
+                    </div>
+                    <div class="modal-body">
+                        <section>
+                            <ol type="A">
+                                <li>
+                                    <h2  class="text-start">Datos identificativos</h2>
+                                    <p><span class="bolder">Scalabl Global Limited</span> (en adelante, “Scalabl”), con sede en Innovation Centre, Gallows Hill, Warwick, CV34 6UW, Reino Unido, ofrece a terceros el denominado “Curso de Emprendimientos e Innovación” (en adelante, el “Curso”), que se imparte actualmente en su modalidad online (en adelante, “Curso Online de Emprendimientos e Innovación” o “Curso Online”) en los idiomas español, inglés o portugués a través del sitio web <a href="www.scalabl.com">www.scalabl.com</a> (en adelante, el “Sitio Web”).</p>
+                                    <p>El Curso, tanto en su modalidad online actualmente impartida como en sus modalidades presenciales ya dictadas o que puedan en un futuro dictarse, está dirigido a emprendedores, empresarios y profesionales y se basa en una sólida metodología para el desarrollo de modelos de negocio altamente rentables y escalables, que puede ser aplicada al diseño de una nueva empresa o unidad de negocio o a la reformulación de una compañía existente.</p>
+                                    <p>Scalabl cuenta con una comunidad global de graduados (en adelante, la “Comunidad Global de Scalabl”, la “Comunidad” o la “Red”), formada por todas las personas que, al graduarse del Curso, independientemente de qué institución lo haya comercializado, y, al ser admitidas por Scalabl Global Limited, adquieren el status de “Member” o el status de “Alumni” y, voluntariamente, deciden aceptar y pertenecer a la Red. </p>
+                                    <p>Se denomina “Alumni” a todo graduado de las ediciones presenciales del Curso y “Member” a toda persona que haya cursado y completado satisfactoriamente el Curso Online. </p>
+                                    <p>Cabe señalar que, dentro de la Comunidad, los usuarios que se gradúen del curso online obtendrán acceso a la red global “Scalabl Online Members”, mientras que los Alumni acceden a la red global "Scalabl Alumni".</p>
+                                    <p>Al registrarte en el Curso, nos estás confiando información y estás aceptando las prácticas que se detallan a continuación. En adelante, serás denominado como “Usuario”, o conjuntamente como los “Usuarios” del Curso, y te explicaremos en qué consiste nuestra Política de Privacidad.</p>
+                                    <p>Se indican los datos identificativos de Scalabl:</p>
+                                    <ul class="list-circle">
+                                        <li><span>Scalabl Global Limited</span></li>
+                                        <li><span>Dirección: </span> Innovation Centre, Gallows Hill, Warwick, CV34 6UW, United Kingdom</li>
+                                        <li><span>Correo electrónico de contacto:</span> info@scalabl.com</li>
+                                        <li class="mb-1"><span>Teléfono de contacto:</span> +372 58 35 83 47</li>
+                                    </ul>
+                                    <p>En el desempeño de dicho compromiso, Scalabl ha implementado la presente política de privacidad (en adelante, la “Política de Privacidad”) que cumple con el Reglamento Europeo Nro. 679/2016, del 27 de abril, de Protección de Datos de Carácter Personal y con la ley argentina Nro. 25.326 de Protección de los Datos Personales.</p>
+                                    <p>Esta Política de Privacidad describe las políticas y prácticas de Scalabl en lo que se refiere a la recolección, uso y divulgación de información personal recopilada. Por eso, esta Política de Privacidad está destinada a ayudarte a entender qué datos recopilamos, por qué los recopilamos y qué hacemos con ellos.</p>
+                                    <p>Te aclaramos que Scalabl se reserva el derecho a modificar la presente Política de Privacidad por múltiples razones, como ser el empleo de nuevas tecnologías de procesamiento de información o cambios en el Sitio Web, o cambios en la legislación vigente. En caso de que dicha modificación te afectara en lo relativo al tratamiento de tus datos en la Política de Privacidad, esto te será debidamente informado y, en caso de que no estés de acuerdo con dichos cambios, tendrás que darte de baja del Curso. </p>
+                                    <p>Si no estás de acuerdo con la Política de Privacidad, siempre podrás darte de baja del Curso.</p>
+                                </li> 
+                                <p> A continuación, te brindaremos información que te ayudará a entender nuestra Política de Privacidad.</p>                               
+                                <!-- INDICE -->
+                                <div class="indice-terminos-condiciones">
+                                    <ol type="1">
+                                        <li>¿Qué información recopilamos?</li>
+                                        <li>¿Para qué utilizamos la información que recopilamos?</li>
+                                        <li>¿Para qué necesitamos el consentimiento expreso?</li>
+                                        <li>¿Con quién compartimos la información recopilada?</li>
+                                        <li>¿Dónde almacenamos y cómo protegemos la información recopilada?</li>
+                                        <li>¿Cómo se puede acceder, eliminar y/o actualizar la información recopilada?</li>
+                                        <li>¿Cuáles son tus derechos cuando nos facilitas tus datos?</li>
+                                        <li>Mayoría de Edad</li>
+                                        <li>Política en Redes Sociales</li>
+                                        <li>Integración con el resto de los textos legales</li>
+                                    </ol>
+                                </div>
+                            </ol>
+                        </section>
+                        <section>
+                            <ol type="1">
+                                <li  class="my-5">
+                                    <h2 class="text-start">¿Qué información recopilamos?</h2>
+                                    <p>Scalabl recibe y almacena (a) información que el Usuario nos proporciona, (b) información obtenida de terceros, e (c) información que recopilan nuestros sistemas, según se describe a continuación:</p>
+                                    <ol type="a">
+                                        <li>
+                                            <h2 class="text-start">Información que nos proporciona el Usuario</h2>
+                                            <p> 
+                                                Al ingresar al Curso, el Usuario acepta proporcionar a Scalabl información personal referida a su identidad, entendiéndose por ello, sin carácter taxativo, la siguiente: nombre y apellido, dirección, teléfono, dirección de e-mail, fecha de nacimiento y nacionalidad (en adelante, la “Información Personal”).
+                                            </p>
+                                            <p> 
+                                                Adicionalmente, durante el Curso podrás facilitarnos opiniones y comentarios (en adelante, las “Opiniones”). En este caso, estás aceptando y estás de acuerdo en que todas las Opiniones que nos envíes serán publicadas en el Sitio Web o en otros sitios web y/o aplicaciones con quienes Scalabl tenga relaciones contractuales. En tal caso, te informamos que, eventualmente, podrás ser identificado con nombre completo, foto, perfil profesional, comentario y nacionalidad. Al brindarnos tu opinión o subir fotos reales a través del Curso y/o el Sitio Web, estás cediendo a Scalabl todos los derechos de propiedad sobre dichas fotografías y Opiniones. Te recordamos que podrás eliminar tu opinión siguiendo el procedimiento que se detalla más abajo en el punto <span class="bolder">6. ¿Cómo se puede acceder, eliminar y/o actualizar la Información Recopilada?</span>  
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h2 class="text-start">Información proporcionada por terceros</h2>
+                                            <p> 
+                                                En la medida permitida por la legislación aplicable, Scalabl también podrá obtener Información Personal tuya y añadirla a la Información Personal que nos proporcionan los terceros, ya sean empresas del grupo, aliados comerciales y/u otras fuentes de terceros independientes —como ser bases de datos públicas, información recopilada durante una conversación telefónica y/o a través de aplicaciones interactivas—. Deberás tener en cuenta que toda la información que recopilamos sobre cada Usuario sólo podrá ser utilizada para los fines que se indican en el punto 2. Cualquier Información Personal obtenida por Scalabl por los medios aquí descritos será tratada de conformidad con las disposiciones de esta Política de Privacidad. 
+                                            </p>
+                                            <p>
+                                                Como ya se ha establecido en los puntos anteriores, Scalabl no facilitará los datos de los Usuarios a terceros. En caso de que quisiera hacerlo, se te informará previamente y se solicitará tu consentimiento.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h2 class="text-start">Información que recopilan nuestros sistemas. Política de Cookies. Vínculos con otros Sitios. Servicios de geolocalización</h2>
+                                            <p> Scalabl podrá recoger y procesar información sobre tus visitas a nuestro Sitio Web. Esta información podrá ser utilizada para mejorar el contenido del Sitio Web y/o del Curso. A estos fines, podremos instalar “cookies”, a saber: pequeños fragmentos de texto que se utilizan para conservar información en navegadores web y que se almacenan en el disco rígido de tu dispositivo. Dichas cookies podrán ser utilizadas por Scalabl o por terceros.</p>                
+                                            <p>Además, mediante las cookies o un servicio de geolocalización basado en la IP de tu conexión o GPS, en Scalabl podremos acceder a la información de tu localización para brindarte un mejor servicio desde el Sitio Web.</p>
+                                            <p>En el Sitio Web contamos con contenidos que establecen un vínculo con sitios o servicios de terceros. Cuando se habilita un servicio de terceros, nos estás autorizado a conectar y acceder a otra información que esté disponible según nuestro acuerdo con el proveedor de servicios. Sin embargo, en Scalabl no recibimos ni almacenamos contraseñas de ninguno de estos servicios de terceros.</p>
+                                            <p>En tal sentido, como encargados de tratamiento, tenemos contratados los siguientes proveedores de servicios, que se han comprometido al cumplimiento de las disposiciones normativas de aplicación en materia de protección de datos, en el momento de su contratación:</p>                                                       
+                                            <ul class="list-circle">
+                                                <li>
+                                                    <h2 class="text-start d-inline">Teachable, Inc</h2>
+                                                    <p class="d-inline">
+                                                        , 16 W. 22nd Street, 6th Floor, New York, New York 10010, que proporciona servicios de creación de cursos web. Se puede consultar la política de privacidad y demás aspectos legales de dicha compañía en el siguiente enlace: <a href="https://teachable.com/privacy-policy">https://teachable.com/privacy-policy</a>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <h2 class="text-start d-inline">Facebook Ireland Limited</h2>
+                                                    <p class="d-inline">
+                                                        (identificado con las marcas comerciales Facebook, Messenger, Instagram y/o WhatsApp), con VAT registrado número IE9692928F y domicilio en 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irlanda. Se puede consultar la política de privacidad y demás aspectos legales de dicha compañía en el siguiente enlace: <a href="https://www.facebook.com/about/privacy/update">https://www.facebook.com/about/privacy/update</a>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <h2 class="text-start d-inline">LinkedIn Ireland Unlimited Company</h2>
+                                                    <p class="d-inline">, Wilton Place, Dublín 2, Irlanda. Se puede consultar la política de privacidad y demás aspectos legales de dicha compañía en el siguiente enlace <a href="https://www.linkedin.com/legal/privacy-policy?_l=es_ES">https://www.linkedin.com/legal/privacy-policy?_l=es_ES</a></p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="my-5">
+                                    <h2 class="text-start">¿Para qué utilizamos la información que recopilamos?</h2>
+                                    <p>Scalabl utiliza tu Información Personal para los siguientes fines:</p>
+                                    <ol type="a">
+                                        <li>
+                                            Para brindar el Curso y sus servicios anexos. 
+                                        </li>
+                                        <li>
+                                            Para prevenir o tratar eventuales errores, problemas técnicos, de seguridad o fraude en el Sitio Web.
+                                        </li>
+                                        <li>
+                                            Para analizar y controlar el uso, las tendencias y otras actividades de los Usuarios.
+                                        </li>
+                                        <li>
+                                            Para dar cumplimiento con las exigencias de las leyes, normativas y procedimientos legales aplicables.
+                                        </li>
+                                        <li>
+                                            Para comunicarse con el Usuario en respuesta a sus solicitudes, comentarios y preguntas.
+                                        </li>
+                                        <li>
+                                            Para desarrollar y proporcionar herramientas de búsqueda, formación y productividad, así como funciones adicionales.
+                                        </li>
+                                        <li>
+                                            Para enviar correos electrónicos y otras comunicaciones relacionados con nuevas funciones del Curso y/o Sitio Web, así como comunicaciones promocionales u otras noticias acerca de Scalabl.
+                                        </li>
+                                        <li>
+                                            Para la facturación, gestión de cuentas y otros asuntos administrativos. Te avisamos que Scalabl podría necesitar contactarte para la facturación, gestión de cuentas y otras razones similares.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="my-5">
+                                    <h2 class="text-start">¿Para qué necesitamos el consentimiento expreso?</h2>
+                                    <p>
+                                        Dando cumplimiento a lo exigido por el Reglamento Europeo 679/2016, del 27 de abril, de Protección de Datos Personales, por la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales, y por la ley argentina 25.326, de Protección de los Datos Personales, y atendiendo a lo establecido en nuestras políticas internas, necesitamos tus datos personales para poder identificarte y brindarte el Curso.
+                                    </p>
+                                    <p>
+                                        Con dicha(s) acción(es), nos estás manifestando de forma libre e inequívoca que estás de acuerdo en que Scalabl trate tus datos según las finalidades mencionadas en los apartados anteriores. 
+                                    </p>
+                                    <p>
+                                        El Usuario garantiza que los datos personales facilitados a Scalabl son veraces y se hace responsable de comunicar a Scalabl cualquier modificación de los mismos.
+                                    </p>
+                                    <p>
+                                        La aceptación del Usuario de que sus datos sean tratados con los fines referidos en esta Política de Privacidad tiene siempre carácter revocable, sin efectos retroactivos, conforme a lo dispuesto en la legislación vigente.
+                                    </p>
+                                </li>
+                                <li class="my-5"> 
+                                    <h2 class="text-start">¿Con quién se comparte la Información Personal recopilada?</h2>
+                                    <p>Esta sección describe con quiénes Scalabl puede compartir y divulgar la Información:</p>
+                                    <ol type="a">
+                                        <li>
+                                            Empresas del grupo: Scalabl podrá compartir información con cualquiera de sus sociedades controladas, controlantes y vinculadas.
+                                        </li>
+                                        <li>
+                                            Reorganización societaria: si, eventualmente, Scalabl participa en una fusión, adquisición, quiebra, disolución, reorganización, venta de algunos o de todos los activos o participaciones societarias, financiamiento, oferta pública de valores, adquisición de toda o parte de nuestra empresa, en una transacción o procedimiento similar, podría compartirse o transferirse una parte o la totalidad de la Información Personal, conforme a los acuerdos de confidencialidad estándares.	
+                                        </li>
+                                        <li>
+                                            Con las autoridades de competencia: sólo en caso de recibir solicitudes de índole judicial conforme a las exigencias de la legislación, la normativa y los procedimientos legales aplicables. 
+                                        </li>
+                                        <li>
+                                            Entre Usuarios: el Curso y/o el Sitio Web permite trabajar de forma colaborativa entre Usuarios, permitiendo que cada uno pueda, eventualmente, emitir Opiniones durante el Curso.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="my-5">
+                                    <h2 class="text-start">¿Dónde almacenamos y cómo protegemos la información recopilada?</h2>
+                                    <p>Toda la Información Personal es recolectada y almacenada en servidores ubicados físicamente en los Estados Unidos, Comunidad Europea y/o Argentina. Al aceptar la Política de Privacidad, estás aceptando que Scalabl pueda transferir tu Información Personal con destino a cualquier país del mundo. En cualquier caso, Scalabl se compromete a garantizar que se cumplan con los estándares legalmente exigibles para la protección y resguardo de tu Información Personal, mediante la firma de acuerdos o convenios cuyo objeto sea la privacidad de tu Información Personal.</p>
+                                    <p>Para garantizar la seguridad en nuestro Sitio Web, hemos integrado un sistema de seguridad que nos permite mantener la confidencialidad y la integridad de los datos de nuestros Usuarios que hayan sido remitidos o recogidos a través de los medios mencionados en el primer punto.</p>
+                                    <p>De este modo, Scalabl mantiene los niveles de seguridad de protección de datos requeridos por la nueva legislación y normativa referida a lo largo del texto, y ha dispuesto en el Sitio Web todos los medios técnicos a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los datos que el Usuario facilite a través del Sitio Web.</p>
+                                    <p>También, en calidad de Usuario de nuestro Sitio Web y/o del Curso entiendes, aceptas y comprendes que las medidas de seguridad en Internet no son inexpugnables y que, por lo tanto, te obligas a adoptar las medidas de seguridad necesarias que te permitan confiar en la veracidad del Sitio Web en la que estás introduciendo tus datos. Nosotros también haremos lo posible por garantizar en todo momento la privacidad y seguridad de tus datos de identificación, haciendo uso siempre de la máxima diligencia e implementando las medidas que sean necesarias. </p>
+                                    <p>Así las cosas, te informamos que serás el único responsable sobre las medidas de seguridad que implementes en relación con la protección de tus datos, con lo cual, Scalabl no se hace responsable de las situaciones donde el Usuario no haya implementado las medidas de seguridad que correspondan, ni de sus consecuencias, así como por causas o daños provocados por terceros ajenos a Scalabl, incluyendo casos fortuitos y/o de fuerza mayor.</p>
+                                    <p>De acuerdo con lo antes establecido, Scalabl no puede garantizar que terceros no autorizados puedan tener conocimiento de la clase, condiciones, características y circunstancias del uso que los Usuarios hacen del Curso.</p>
+                                </li>
+                                <li class="my-5">
+                                    <h2 class="text-start">¿Qué datos retenemos después de que sea desactivada tu cuenta de Usuario?</h2>
+                                    <p>En caso que dejes de ser Usuario, te hacemos saber que Scalabl sólo conservará tu Información Personal por el plazo necesario para dar cumplimiento con las exigencias de la normativa aplicable.</p>
+                                </li>
+                                <li class="my-5">
+                                    <h2 class="text-start">¿Cuáles son tus derechos cuando nos facilitas tus datos?</h2>
+                                    <p>La legislación y la normativa de aplicación han implementado una serie de garantías jurídicas que permiten al Usuario ejercer derechos y acciones relacionados con el tratamiento de sus datos.</p>
+                                    <p>Scalabl te ofrece dicha garantía legal, con lo cual, en cualquier momento y/o cuando así lo consideres conveniente, podrás hacer uso de tus derechos de acceso, rectificación, supresión, oposición, portabilidad y olvido escribiendo al correo electrónico de contacto que hemos habilitado para ello: <a href="mailto:info@scalabl.com">info@scalabl.com</a>,  adjuntando copia del pasaporte o de tu DNI (titular de los datos) e indicando en el asunto de manera expresa la petición que deseas realizar: acceso, rectificación, supresión, oposición, portabilidad, olvido y limitación del tratamiento.</p>
+                                    <p>No obstante lo anterior, es importante que como Usuario tengas en cuenta que la información que hayas compartido, por cualquier vía, podrá continuar siendo visible y que Scalabl se exonera de toda responsabilidad con relación a la eliminación de esta información.</p>
+                                    <p>Del mismo modo, Scalabl no controla el sistema de renovación de los mecanismos de búsqueda de terceros, pudiendo contenerse en dichos mecanismos cierta información del perfil público que ya haya sido cancelada por Scalabl pero que todavía conste en Internet por la redifusión de la misma, en cuyo caso, recomendamos que te dirijas a los responsables de esas plataformas y/o sitios web para solicitar su cancelación o el ejercicio del derecho al olvido.</p>
+                                    <p>Te explicamos brevemente en qué consiste cada uno de los derechos que puedes ejercer:</p>
+                                    <ul class="list-unstyle">
+                                        <li>
+                                            <h2 class="text-start">&#10003 Derecho de acceso: </h2>
+                                            <p>ejercitando este derecho podrás conocer qué tratamiento es llevado a cabo sobre tus datos personales por parte de Scalabl: su finalidad, el origen o su posible transferencia a terceros.</p>
+                                        </li>
+                                        <li>
+                                            <h2 class="text-start">&#10003 Derecho de rectificación: </h2>
+                                            <p>podrás corregir o modificar tus datos en caso de que resulten inexactos o incompletos para garantizar que la información que podamos tener sobre ti es correcta.</p>
+                                        </li>
+                                        <li>
+                                            <h2 class="text-start">&#10003 Derecho de supresión (o derecho al olvido): </h2>
+                                            <p>podrás solicitar la supresión de tus datos personales, sin dilación debida, cuando concurra alguno de los supuestos contemplados. Por ejemplo, tratamiento ilícito de datos, o cuando haya desaparecido la finalidad que motivó el tratamiento o recogida. No obstante, se regulan una serie de excepciones en las que no procederá este derecho. Por ejemplo, cuando deba prevalecer el derecho a la libertad de expresión e información.</p>
+                                        </li>
+                                        <li>
+                                            <h2 class="text-start">&#10003 Derecho de oposición: </h2>
+                                            <p>mediante este derecho podrás oponerte al tratamiento de tus datos personales: (i) cuando por motivos relacionados con tu situación personal, debe cesar el tratamiento de tus datos salvo que se acredite un interés legítimo, o sea, necesario para el ejercicio o defensa de reclamaciones, o bien, (ii) cuando el tratamiento tenga por objeto la mercadotecnia directa.</p>
+                                        </li>
+                                        <li>
+                                            <h2 class="text-start">&#10003 Derecho de limitación del tratamiento: </h2>
+                                            <p>podrás solicitarnos que limitemos el tratamiento de tus datos (i) cuando se impugne la exactitud de los datos, mientras verificamos dicha impugnación, (ii) cuando el tratamiento sea ilícito, pero te opongas a la supresión de tus datos y solicites la limitación del tratamiento en su lugar, (iii) cuando seas tú quien los necesite en caso de una reclamación (iv) e incluso cuando te hayas opuesto al tratamiento de tus datos para el cumplimiento de una misión en interés público o para la satisfacción de un interés legítimo, que deberá verificarse. En estos casos, únicamente los conservaremos para el ejercicio o la defensa de reclamaciones.</p>
+                                        </li>
+                                        <li>
+                                            <h2 class="text-start">&#10003 Derecho de portabilidad: </h2>
+                                            <p> podrás solicitar la portabilidad de tus datos en formato estructurado, de uso común y lectura mecánica, para poder transmitirlos a otra entidad, siempre que sea técnicamente posible.</p>
+                                        </li>
+                                    </ul>
+                                    <p>Para el ejercicio de cualquiera de estos derechos, deberás enviar un mail a la casilla de correo <a href="mailto:info@scalabl.com">info@scalabl.com</a>, tras lo cual nos pondremos en contacto contigo para validar tu identidad y resolver tu solicitud.</p>
+                                    <p>Asimismo, en cualquier momento, podrás retirar el consentimiento prestado sin que ello afecte a la licitud del tratamiento ya realizado, enviando tu solicitud a la misma dirección indicada en el párrafo anterior. En este caso también es necesario acompañar a tu solicitud una copia de tu Documento Nacional de Identidad o un documento equivalente acreditativo de tu identidad.</p>
+                                </li>
+                                <li class="my-5">
+                                    <h2 class="text-start">Política en redes sociales</h2>
+                                    <p>Scalabl dispone de perfiles corporativos y/o grupos privados en las redes sociales Facebook, Instagram, LinkedIn, Twitter, YouTube, WhatsApp, Telegram, Pinterest, TikTok y Clubhouse (en adelante, las “Redes Sociales”). Así, en virtud de lo dispuesto por el Reglamento Europeo de Protección de Datos 679/2016 del 27 de abril de 2016 y por la Ley Argentina de Protección de Datos Personales, Ley Nro. 25.326, Scalabl es "Responsable del tratamiento de tus datos" con motivo de la existencia de dichos perfiles en estas redes sociales y el hecho de que nos sigas y te podamos seguir.</p>
+                                    <p>Por otra parte, te informamos que utilizaremos las redes sociales como canal de interacción entre los Usuarios y Scalabl. </p>
+                                    <p>Ahora bien, también te hacemos saber que no existe ningún vínculo entre Scalabl y dichas redes sociales, por lo que aceptarás su política de uso y condiciones una vez que accedas a las mismas y/o aceptes sus avisos y/o términos y condiciones en el procedimiento de registro, no siendo responsable Scalabl por el uso o tratamiento de tus datos que se haga fuera de la estricta relación y prestación de servicios indicados en esta Política de Privacidad.</p>
+                                </li>
+                                <li class="my-5">
+                                    <h2 class="text-start">Integración con el resto de los textos legales</h2>
+                                    <p>Esta Política de Privacidad se complementa con los Términos y Condiciones de Uso y la Política de Cookies asociada a este Sitio Web.</p>
+                                </li>
+                            </ol>
+                        </section>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-modal py-3 me-3" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- /MODAL TERMINOS Y CONDICIONES -->
+
+        <!-- CDN BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>   
+        <script src="js/funciones.js"></script>
+    </body>
+</html>
